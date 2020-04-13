@@ -1,0 +1,21 @@
+$ORIGIN home.lan.
+$TTL	86400			; for RRs with no TTL, expire after 1 day
+@	IN	SOA	dns1.home.lan.	admin.home.lan.	(
+		2020021901	; serial number
+		28800		    ; refresh after 8 hours
+		7200		    ; retry after 2 hours
+		864000	    ; expire after 10 days
+		86400		    ; minimun TTL 1 day
+		)
+;
+@		IN	NS	dns1.home.lan.
+@		IN	NS	dns2.home.lan.
+@		IN	MX	10	mail.home.lan.
+;
+server		IN	A	192.168.1.1
+computer	IN	A	192.168.1.2
+dns1		  IN	A	192.168.1.3
+dns2		  IN	A	192.168.1.4
+mail      IN  A 192.168.1.5
+;
+; EOF
