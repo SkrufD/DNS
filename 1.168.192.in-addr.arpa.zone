@@ -1,0 +1,21 @@
+$ORIGIN 1.168.192.in-addr.arpa.
+$TTL	86400			; for RRs with no TTL, expire after 1 day
+@	IN	SOA	dns1.home.lan.	admin.home.lan.	(
+		2020021901	; serial number
+		28800		; refresh after 8 hours
+		7200		; retry after 2 hours
+		864000		; expire after 10 days
+		86400		; minimum TTL of 1 day
+        )
+;
+@	IN	NS	dns1.home.lan.
+@	IN	NS	dns2.home.lan.
+@	IN	MX	10	mail.home.lan.
+;
+1	IN	PTR	server.home.lan.
+2	IN	PTR	computer.home.lan.
+3	IN	PTR	dns1.home.lan.
+4	IN	PTR	dns2.home.lan.
+5 IN  PTR mail.home.lan.
+;
+; EOF
