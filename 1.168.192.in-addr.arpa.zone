@@ -10,12 +10,12 @@ $TTL	86400			; for RRs with no TTL, expire after 1 day
 ;
 @	IN	NS	dns1.home.lan.
 @	IN	NS	dns2.home.lan.
-@	IN	MX	10	mail.home.lan.
+@	IN	MX 10	mail.home.lan.
 ;
 1	IN	PTR	server.home.lan.
 2	IN	PTR	computer.home.lan.
 3	IN	PTR	dns1.home.lan.
 4	IN	PTR	dns2.home.lan.
-5 IN  PTR mail.home.lan.
+5	IN	PTR	mail.home.lan.
 ;
 ; EOF
